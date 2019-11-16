@@ -1,0 +1,139 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .fa-bars {
+  
+    color: rgb(32, 194, 14);
+    padding: 2%;
+    margin-top: -1%;
+    position: fixed;
+    left: 90%;
+    z-index: 11;
+  }
+  
+  .ml5 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 6em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Lobster', cursive;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1.0);
+    overflow-x: hidden;
+    transition: 1.0s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #20c20e;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .ml3 {
+    width: 50%;
+    font-weight: 600;
+    font-size: 3.20em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Lobster', cursive;
+  }
+  
+  .hero {
+    height: 580px;
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .hero,
+  .about {
+    /* Sizing */
+    width: 100vw;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* Text styles */
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 300px;
+    border-radius: 0.25rem;
+    /* Padding and margins */
+    padding: 0.75em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 1.75em;
+    /* Background styles */
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.80);
+  }
+  
