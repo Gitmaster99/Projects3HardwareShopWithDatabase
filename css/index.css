@@ -62,7 +62,7 @@ nav.black ul {
 
 nav ul li {
     display: inline-block;
-    padding: 16px 40px;
+    padding: 16px 20px;
 }
 
 nav ul li a {
@@ -88,7 +88,10 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-
+.fa-houzz {
+    text-decoration: none;
+    
+}
 @media(max-width: 786px) {
 
     .logo {
@@ -164,7 +167,8 @@ h4 {
  color:#363940
 }
 a {
- color:#5867dd
+ color:rgb(255, 0, 157);
+ text-decoration: none;
 }
 .no-padding {
  padding:0!important
@@ -183,7 +187,7 @@ a {
  right:-webkit-calc((100% - 1400px)/ 2);
  right:calc((100% - 1400px)/ 2);
  z-index:111;
- bottom:80px;
+ bottom:100px;
  text-align:center;
  
 }
@@ -213,7 +217,8 @@ a {
  transition:.3s
 }
 .footer-menu ul li a:hover {
- color:#5867dd
+ color:rgb(255, 0, 157);
+ text-decoration: none;
 }
 .footer-menu--1 {
  width:100%
@@ -235,10 +240,12 @@ a {
  color:#999
 }
 .mini-footer p a {
- color:#5867dd
+ color:rgb(255, 0, 157);
+ text-decoration: none;
 }
 .mini-footer p a:hover {
- color:#34bfa3
+ color:#34bfa3;
+ text-decoration: none;
 }
 .widget-about img {
  display:block;
@@ -260,8 +267,15 @@ a {
  padding-right:12px
 }
 .widget-about .contact-details li a {
- color:#5867dd
+ color:rgb(255, 0, 157);
+ text-decoration: none;
 }
+.widget-about .contact-details li a:hover {
+ color:#34bfa3;
+ text-decoration: none;
+   }
+
+
 @media (max-width:991px) {
  .footer-menu {
   padding-left:0

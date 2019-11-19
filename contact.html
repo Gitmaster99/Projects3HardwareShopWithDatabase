@@ -3,8 +3,8 @@
 <meta charset="UTF-8">
 
 <head>
-    <title>Bld | We've got you covered</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>PcHardware | We've got you covered</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,48 +15,76 @@
 <body>
     
     <div class="wrapper">
-        <header>
-            <nav>
-               
-               <div class="logo">
-                     <a href="index.html"><i class="fa fa-houzz fa-3x"></i></a>
-               </div>
-               <div class="menu">
-                  <ul>
-                     <li><a href="about.html">What is Bld</a></li>
-                     <li><a href="configurator.html">Our Configurator</a></li>
-                     <li><a href="starter.html">Starter Build</a></li>
-                     <li><a href="gaming.html">Gaming build</a></li>
-                     <li><a href="creator.html">Creator Build</a></li>
-                     <li><a href="accessories.html">Accessories</a></li>
-                     <li><a href="components.html">Components</a></li>
-                     <li><a href="contact.html">Contact</a></li>
-                  </ul>
-               </div>
-            </nav>
-         </header>
-        <div class="content">
-           <p>
-              We are an online hardware store with high quality products and exellent service.
-           </p>
-           <p>
-              We sell all kinds of products, from PC components to pre-builds, laptops, smartphones, tablets, accessories and lots more. We also give exellent support with free shipping and free returns. We also offer a 1 Year guarantee on all our electronic devices and components.
-           </p>
-        </div>
+            <header>
+                    <nav>
+                       
+                       <div class="logo">
+                             <a href="index.html"><i class="fa fa-houzz fa-3x"></i></a>
+                       </div>
+                       <div class="menu">
+                          <ul>
+                             <li><a href="deals.html">What is Bld</a></li>
+                             <li><a href="accessories.html">Our Configurator</a></li>
+                             <li><a href="hardware.html">Starter Build</a></li>
+                             <li><a href="smartphones.html">Gaming build</a></li>
+                             <li><a href="tablets.html">Creator Build</a></li>
+                             <li><a href="laptops.html">Accessories</a></li>
+                             <li><a href=".html">Components</a></li>
+                             <li><a href="contact.html">Contact</a></li>
+                          </ul>
+                       </div>
+                    </nav>
+                 </header>
+        
      </div>
 
 
-
      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-12">
-          </div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+<!-- Default form contact -->
+<form class="text-center border border-light p-2" action="#!">
+
+        <p class="h4 mb-4">Contact us</p>
+    
+        <!-- Name -->
+        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+    
+        <!-- Email -->
+        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+    
+        <!-- Subject -->
+        <label>Subject</label>
+        <select class="browser-default custom-select mb-4">
+            <option value="" disabled>Choose option</option>
+            <option value="1" selected>Feedback</option>
+            <option value="2">Report a bug</option>
+            <option value="3">Feature request</option>
+            <option value="4">Feature request</option>
+        </select>
+    
+        <!-- Message -->
+        <div class="form-group">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
         </div>
-     </div>    
+    
+        <!-- Copy -->
+        <div class="custom-control custom-checkbox mb-4">
+            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+            <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+        </div>
+    
+        <!-- Send button -->
+        <button class="btn btn-info btn-block" type="submit">Send</button>
+    
+    </form>
+    <!-- Default form contact -->
          
 
 
-
+</div>
+</div>
+</div>
 
 
 
@@ -73,9 +101,8 @@
                     <div class="footer-widget">
                       <div class="widget-about">
                             <i class="fa fa-houzz fa-5x"></i><br><br>
-                        <p>In search for an awesome desktop computer, but don't have the urge to build it yourself? 
-                          Look no furture, we have a variety of pre-builds systems and an advanced configurator where you can customize your desktop to your liking without the hassle of choosing the wrong components.</p>
-                        <p>Bld, We've got you covered.</p>
+                        <p>Need electronics? Look no furture, we have everything you need, from smartphones to computer components, we've got you covered.</p>
+                        <p>HardwareStore, always one step ahead.</p>
                         <ul class="contact-details">
                           <li>
                             <span class="icon-earphones"></span> Call Us:
@@ -94,7 +121,7 @@
                   <div class="col-md-3 col-sm-4">
                     <div class="footer-widget">
                       <div class="footer-menu footer-menu--1">
-                        <h4 class="footer-widget-title">Bld</h4>
+                        <h4 class="footer-widget-title">HardwareStore</h4>
                         <ul>
                           <li>
                             <a href="#">.....</a>
@@ -247,5 +274,8 @@ $(document).ready(function() {
         return false; 
     }); 
 });
+
+
+
 </script>
 </html>
