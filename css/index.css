@@ -81,7 +81,7 @@ header {
     width: 550px;
     height: 550px;
     position: absolute;
-    top: 57%;
+    top: 53%;
     left: 48%;
     
 
@@ -122,6 +122,42 @@ header {
     width: 45%;
     background-color: #640a92;
     color: #000;
+}
+
+.warranty {
+    
+    width: 100%;
+    height: auto;
+    background: url(https://cdn.letsbld.com/assets/images/section-images/backgrounds/features-bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.warranty img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.warranty .btn {
+    
+    width: 40%;
+    
+    background-color: #640a92;
+    color: #fff;
+    margin-bottom: 10%;
+}
+
+.warranty .btn:hover {
+    
+    width: 45%;
+    background-color: #640a92;
+    color: #000;
+}
+
+
+
+.col-garantee:hover {
+   opacity: 0.7; 
 }
 
 .logo {
@@ -456,6 +492,15 @@ a {
  }
 }
 
+.contact-options p {
+    color: #640a92;
+    font-weight: bold;
+}
+
+.contact-options p:hover {
+    color: rgb(255, 0, 157);
+    font-weight: bold;
+}
 
 /* Slider */
 
