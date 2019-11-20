@@ -3,6 +3,27 @@ html, body {
     padding: 0;
     width: 100%;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f2f2f2;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #640a92;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #640a92;
+  }
+
 h1 {
     font-family: 'Gotham SSm A', 'Gotham SSm B';
 }
