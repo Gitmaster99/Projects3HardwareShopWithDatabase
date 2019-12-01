@@ -1,19 +1,30 @@
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: index.html');
+	exit();
+}
+?>
+
 <!DOCTYPE html>
-<meta charset ="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
     <title>Bld | We've got you covered</title>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/page1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md">
         <a href="#" class="navbar-brand"><i class="fa fa-houzz fa-3x"></i></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -22,7 +33,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="#" class="nav-item nav-link active">What is Bld</a>
-                
+
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bld Prebuilds</a>
                     <div class="dropdown-menu">
@@ -33,28 +44,28 @@
                     </div>
                 </div>
 
-                <a href="#" class="nav-item nav-link disabled">Bld Configurator</a>
+                <a href="#" class="nav-item nav-link disabled">Laptops</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Accessories</a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Amd CPU's</a>
-                        <a href="#" class="dropdown-item">Intel CPU's</a>
-                        <a href="#" class="dropdown-item">Motherboards</a>
-                        <a href="#" class="dropdown-item">RAM</a>
+                        <a href="#" class="dropdown-item">Keyboards</a>
+                        <a href="#" class="dropdown-item">Mice</a>
+                        <a href="#" class="dropdown-item">mousepads</a>
+                        <a href="#" class="dropdown-item">Monitors</a>
 
-                        <a href="#" class="dropdown-item">PC Case</a>
-                        <a href="#" class="dropdown-item">Power Supply</a>
-                        <a href="#" class="dropdown-item">Graphics Card</a>
-                        <a href="#" class="dropdown-item">HDD</a>
+                        <a href="#" class="dropdown-item">Cables</a>
+                        <a href="#" class="dropdown-item">Custom PSU Cables</a>
+                        <a href="#" class="dropdown-item">Case Lighting</a>
+                        <a href="#" class="dropdown-item">Room Lighting</a>
 
-                        <a href="#" class="dropdown-item">SSD</a>
-                        <a href="#" class="dropdown-item">CPU Cooler</a>
-                        <a href="#" class="dropdown-item">Case Fans</a>
-                        
+                        <a href="#" class="dropdown-item">Headsets</a>
+                        <a href="#" class="dropdown-item">Gaming Chairs</a>
+                        <a href="#" class="dropdown-item">Gaming Controllers</a>
+
                     </div>
                 </div>
 
-                
+
                 <a href="#" class="nav-item nav-link disabled">Bld Configurator</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Components</a>
@@ -72,33 +83,55 @@
                         <a href="#" class="dropdown-item">SSD</a>
                         <a href="#" class="dropdown-item">CPU Cooler</a>
                         <a href="#" class="dropdown-item">Case Fans</a>
-                        
+
                     </div>
                 </div>
                 <a href="#" class="nav-item nav-link">Contact</a>
-                
+
 
             </div>
-            
+
             <form class="form-inline">
                 <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link"><i class="fa fa-id-badge fa-2x"></i></a>
-                    <p>Welcome back, <?=$_SESSION['name']?>!</p>
+
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-id-badge fa-2x"></i>
+                            <?=  $_SESSION['name']?></a>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">My Orders</a>
+                            <a href="#" class="dropdown-item">Change password</a>
+                            <a href="#" class="dropdown-item">Change personal data</a>
+                            <a href="#" class="dropdown-item">My personal data</a>
+
+                            <a href="#" class="dropdown-item">My returns</a>
+                            <a href="#" class="dropdown-item">Shopping Cart</a>
+
+
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="input-group">                    
+                <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search">
                     <div class="input-group-append">
                         <button type="button" class="btn btn-secondary"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
-               
+
             </form>
-            
+
         </div>
     </nav>
-      
-  
-      
-      
+
+
+
+
+
+
 </body>
+
 </html>
